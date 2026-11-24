@@ -1,0 +1,15 @@
+.header { border-bottom: 1px solid var(--color-border); }
+.header__inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.brand { font-size: 23px; font-weight: 600; letter-spacing: .18em; }
+.brand__dot { color: var(--color-accent); }
+.nav { display: flex; gap: 34px; }
+.nav__link { font-size: 13px; color: var(--color-muted); transition: color .2s; }
+.nav__link:hover { color: var(--color-text); }
+.header__shop { border: 1px solid var(--color-text); padding: 11px 17px; font-size: 12px; letter-spacing: .04em; }
+.header__shop span { margin-left: 10px; }
+@media (max-width: 700px) {
+  .header__inner { min-height: 68px; flex-wrap: wrap; padding-block: 12px; }
+  .nav { order: 3; width: 100%; justify-content: center; gap: 18px; padding-bottom: 8px; }
+  .nav__link { font-size: 12px; }
+  .brand { font-size: 20px; }
+}

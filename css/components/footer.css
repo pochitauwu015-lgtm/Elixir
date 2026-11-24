@@ -1,0 +1,11 @@
+.footer { background: #20201e; color: #f3f0e9; padding-block: 45px 22px; }
+.footer__top { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 40px; }
+.brand--footer { color: #f3f0e9; }
+.footer__phrase { font-family: var(--font-heading); font-style: italic; font-size: 19px; }
+.footer__contact { font-size: 12px; border-bottom: 1px solid #aaa; padding-bottom: 5px; }
+.footer__bottom { display: flex; justify-content: space-between; border-top: 1px solid #4a4845; padding-top: 18px; gap: 20px; }
+.footer__text { color: #aaa6a0; font-size: 10px; }
+@media (max-width: 600px) {
+  .footer__top, .footer__bottom { flex-wrap: wrap; }
+  .footer__phrase { order: 3; width: 100%; }
+}
